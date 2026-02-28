@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JetPress750S_Pantone颜色查询系统 (350g瑞典白卡) by Mike Yao_mikecms</title>
+    <title>JetPress750S_Pantone颜色查询系统 (350g瑞典白卡) by Mike Yao</title>
     <style>
         * {
             box-sizing: border-box;
@@ -11,13 +11,14 @@
         }
         body {
             max-width: 1400px;
-            margin: 20px auto;
+            margin: 2px auto;
             padding: 20px;
             background-color: #f5f7fa;
             color: #333;
         }
         h1 {
-            text-align: center;
+            margin-top: 0; /* 新增这一行 */
+			text-align: center;
             color: #2c3e50;
             margin-bottom: 3px;
             padding-bottom: 6px;
@@ -26,7 +27,7 @@
         .subtitle {
             text-align: center;
             color: #7f8c8d;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             font-size: 16px;
         }
         .container {
@@ -105,8 +106,8 @@
         }
         .example-list h3 {
             color: #2c3e50;
-            margin-bottom: 8px;
-            font-size: 14px;
+            margin-bottom: 5px;
+            font-size: 15px;
         }
         .example-item {
             display: inline-block;
@@ -501,13 +502,16 @@
     </style>
 </head>
 <body>
-    <h1>JetPress 750S_Pantone颜色模拟查询工具</h1>
-    <div class="subtitle">基于350g瑞典白卡_Pantone Coated V5数据 | 支持模糊搜索</div>
+	<h1>
+	    <span style="color: #800080; font-weight: bold;">Jet Press 750S</span>
+	    <span style="font-size: 20px; display:block;">Pantone颜色模拟查询工具</span>
+	</h1>
+    <div class="subtitle">Pantone Coated V5数据<br>基于350g瑞典白卡</div>
     
     <div class="container">
         <div class="search-panel">
             <div class="search-box">
-                <label for="searchInput" class="search-label">输入Pantone编号</label>
+                <label for="searchInput" class="search-label">输入Pantone编号（支持模糊查找）</label>
                 <input type="text" id="searchInput" placeholder="输入部分Pantone色号或颜色名称 (如: 6001, red, yellow)">
                 
                 <div class="search-buttons">
@@ -528,7 +532,9 @@
             </div>
             
             <div class="search-info">
-                <h3>使用提示:</h3>
+                <h3>
+					<span style="font-size: 15px;">使用提示:</span>
+				</h3>
                 <ul>				
                     <li>输入数字或英文名称即可搜索，如"6001"会匹配"6001 C"</li>
                     <li>在详情页中，双击最接近的颜色可将其选中为目标色</li>
